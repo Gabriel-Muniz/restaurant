@@ -1,3 +1,4 @@
-const x = Math.random();
+import firstLoad from "./home";
+import './style.css'
 
-console.log(x);
+firstLoad();
