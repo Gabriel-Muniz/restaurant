@@ -11,15 +11,15 @@ headerRight.classList.add("header-right");
 
 const homeBtn = document.createElement("button");
 homeBtn.classList.add("header-btn");
-homeBtn.setAttribute('id', 'homeBtn');
+homeBtn.setAttribute("id", "homeBtn");
 
 const menuBtn = document.createElement("button");
 menuBtn.classList.add("header-btn");
-menuBtn.setAttribute('id', 'menuBtn');
+menuBtn.setAttribute("id", "menuBtn");
 
 const contactBtn = document.createElement("button");
 contactBtn.classList.add("header-btn");
-contactBtn.setAttribute('id', 'contactBtn');
+contactBtn.setAttribute("id", "contactBtn");
 
 homeBtn.textContent = "Home";
 menuBtn.textContent = "Menu";
@@ -28,6 +28,10 @@ contactBtn.textContent = "Contact";
 const container = document.createElement("div");
 container.classList.add("container");
 
+const wrapper = document.createElement("div");
+wrapper.classList.add("container-wrapper");
+container.appendChild(wrapper);
+
 const footer = document.createElement("div");
 footer.classList.add("footer");
 
@@ -35,8 +39,8 @@ footer.textContent = "Copyright \u00A9 Gabriel Muniz 2024";
 
 for (let i = 0; i < 5; i++) {
   const recipeCard = document.createElement("div");
-    recipeCard.classList.add("recipe-card");
-    container.appendChild(recipeCard);
+  recipeCard.classList.add("recipe-card");
+  wrapper.appendChild(recipeCard);
 }
 
 function firstLoad() {
