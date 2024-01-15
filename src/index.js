@@ -20,8 +20,8 @@ function menuClickHandler() {
 }
 
 function homeClickHandler() {
-    removerChild();
-    firstLoad();
-  }
+  removerChild();
+  firstLoad();
+}
 menuBtn.onclick = menuClickHandler;
 homeBtn.onclick = homeClickHandler;
