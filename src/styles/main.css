@@ -149,11 +149,16 @@ body {
 }
 
 #content {
+  padding: 10% 0 0 0;
+
   flex-grow: 1;
   width: 60%;
   height: 500px;
 
   background-color: #d7b075;
+
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .logo-container {
   width: 100px;

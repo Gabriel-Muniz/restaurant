@@ -20,15 +20,15 @@ btnContainer.classList.add("btn-container");
 
 const btnHome = document.createElement("button");
 btnHome.textContent = "Home";
-btnHome.classList.add("btn-header");
+btnHome.classList.add("home-btn", "btn-header");
 
 const btnMenu = document.createElement("button");
 btnMenu.textContent = "Menu";
-btnMenu.classList.add("btn-header");
+btnMenu.classList.add("menu-btn", "btn-header");
 
 const btnContact = document.createElement("button");
 btnContact.textContent = "Contact";
-btnContact.classList.add("btn-header");
+btnContact.classList.add("contact-btn", "btn-header");
 
 btnContainer.appendChild(btnHome);
 btnContainer.appendChild(btnMenu);
@@ -40,8 +40,6 @@ header.appendChild(btnContainer);
 function firstLoad() {
   body.insertBefore(header, body.children[0]);
   body.appendChild(footer);
-
-  console.log(body, header);
 }
 
 export default firstLoad;

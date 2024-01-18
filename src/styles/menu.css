@@ -1,0 +1,56 @@
+#content{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.menu-card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 2fr min-content;
+
+    border-radius: 10px;
+
+    width: 500px;
+    min-height: 400px;
+
+    margin-bottom: 50px;
+
+    overflow: hidden;
+}
+.menu-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-row: 1;
+    grid-column: 1/span 2;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu-price,
+.menu-desc,
+.menu-title{
+    background-color: #55000588;
+}
+.menu-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-row: 3;
+    grid-column: 2/3;
+
+    font-size: 1.2rem;
+}
+.menu-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-row: 3;
+    text-align: center;
+
+    padding: 1rem;
+}
