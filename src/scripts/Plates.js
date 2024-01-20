@@ -19,14 +19,14 @@ class Plate {
 new Plate(
   "StruggleOff",
   "That's a really hard dish to make, please don't ask for one",
-  69.42
+  69.42,
+  strogonoff
 );
 new Plate(
   "Parmediana",
-  `'Parme' - comes from PARMERAS.
-  'Diana' - is the princess, the first Palmeiras fan ever!`,
+  "'Parme' - comes from PARMERAS.\n'Diana' - is the princess, the first Palmeiras fan ever!",
   191.40,
-
+  parmegiana
 );
 
 export default menuPlates;

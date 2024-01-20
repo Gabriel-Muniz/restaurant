@@ -5,10 +5,12 @@
     align-items: center;
 }
 .menu-card{
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 50px 2fr min-content;
 
+    border: solid #550005 5px;
     border-radius: 10px;
 
     width: 500px;
@@ -27,12 +29,17 @@
     grid-column: 1/span 2;
 
     font-size: 1.5rem;
-    font-weight: bold;
 }
 .menu-price,
 .menu-desc,
 .menu-title{
-    background-color: #55000588;
+    background-color: #550005aa;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-weight: bold;
+
 }
 .menu-price{
     display: flex;
@@ -50,7 +57,25 @@
     align-items: center;
 
     grid-row: 3;
+    grid-column: 1/2;
     text-align: center;
 
     padding: 1rem;
+}
+.img-container{
+    position: relative;
+    grid-row: 1/4;
+    grid-column: 1/3;
+    
+
+    height: inherit;
+    width: inherit;
+    
+}
+.plate-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
 }

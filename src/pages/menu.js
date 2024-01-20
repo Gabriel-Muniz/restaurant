@@ -20,12 +20,21 @@ function setMenu() {
 
     menuTitle.textContent = item.name;
     menuDesc.textContent = item.description;
-    menuPrice.textContent = item.price;
+    menuPrice.textContent = `R$ ${item.price}`;
 
     menu.appendChild(menuTitle);
     menu.appendChild(menuDesc);
     menu.appendChild(menuPrice);
 
+    const menuImg = document.createElement("div");
+    menuImg.classList.add("img-container");
+
+    const backgroundImg = new Image();
+    backgroundImg.src = item.image;
+    backgroundImg.classList.add("plate-img")
+    menuImg.appendChild(backgroundImg);
+
+    menu.appendChild(menuImg);
     content.appendChild(menu);
   });
 }
