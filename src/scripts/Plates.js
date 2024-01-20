@@ -18,7 +18,7 @@ class Plate {
 
 new Plate(
   "StruggleOff",
-  "That's a really hard dish to make, please don't ask for one",
+  "That's a really hard dish to make, please don't order one",
   69.42,
   strogonoff
 );

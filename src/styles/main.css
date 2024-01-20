@@ -157,7 +157,7 @@ body {
 
   background-color: #d7b075;
 
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 }
 .logo-container {
@@ -199,10 +199,4 @@ body {
   color: #d7b075;
 
   font-size: 1.2rem;
-}
-
-.page-title{
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  margin-top: -5%
 }

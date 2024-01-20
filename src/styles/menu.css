@@ -79,3 +79,8 @@
 
     object-fit: cover;
 }
+.page-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 3rem 0;
+}

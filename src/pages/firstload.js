@@ -10,7 +10,7 @@ footer.classList.add("footer");
 const copyright = document.createElement("span");
 copyright.classList.add("copy-text");
 footer.appendChild(copyright);
-copyright.textContent = "Copyright \u00A9 Gabriel Muniz 2024"
+copyright.textContent = "Copyright \u00A9 Gabriel Muniz 2024";
 
 const logo = document.createElement("div");
 logo.classList.add("logo-container");

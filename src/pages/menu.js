@@ -1,12 +1,11 @@
 import "../styles/menu.css";
 import menuPlates from "../scripts/Plates";
 
-const content = document.getElementById("content");
-const title = document.createElement("h1");
-title.classList.add("page-title");
-title.textContent = "Menu";
-
 function setMenu() {
+  const content = document.getElementById("content");
+  const title = document.createElement("h1");
+  title.classList.add("page-title");
+  title.textContent = "Menu";
   
   content.appendChild(title);
 
@@ -36,7 +35,7 @@ function setMenu() {
 
     const backgroundImg = new Image();
     backgroundImg.src = item.image;
-    backgroundImg.classList.add("plate-img")
+    backgroundImg.classList.add("plate-img");
     menuImg.appendChild(backgroundImg);
 
     menu.appendChild(menuImg);
