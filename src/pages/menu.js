@@ -2,9 +2,14 @@ import "../styles/menu.css";
 import menuPlates from "../scripts/Plates";
 
 const content = document.getElementById("content");
+const title = document.createElement("h1");
+title.classList.add("page-title");
+title.textContent = "Menu";
 
 function setMenu() {
   
+  content.appendChild(title);
+
   menuPlates.forEach((item) => {
     const menu = document.createElement("div");
     menu.classList.add("menu-card");
