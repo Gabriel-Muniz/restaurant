@@ -203,3 +203,6 @@ body {
   width: inherit;
   height: auto;
 }
+.page-title{
+  margin-top: 15rem;
+}
