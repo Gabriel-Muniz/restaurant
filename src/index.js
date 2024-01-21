@@ -6,7 +6,7 @@ import setContacts from "./pages/contacts";
 import removerChild from "./scripts/childremover";
 
 firstLoad();
-setContacts();
+setHome();
 
 let currentPage = "";
 currentPage = "home";
