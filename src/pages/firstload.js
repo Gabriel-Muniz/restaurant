@@ -1,4 +1,5 @@
 import "../styles/main.css";
+import logoPng from "../images/logo.png";
 
 const body = document.querySelector("body");
 
@@ -36,6 +37,11 @@ btnContainer.appendChild(btnContact);
 
 header.appendChild(logo);
 header.appendChild(btnContainer);
+
+const logoImg = new Image();
+logoImg.src = logoPng;
+logoImg.classList.add("logo-img");
+logo.appendChild(logoImg);
 
 function firstLoad() {
   body.insertBefore(header, body.children[0]);
