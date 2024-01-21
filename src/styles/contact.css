@@ -1,5 +1,9 @@
 .email-section,
-.phone-section {
-  text-align: justify;
+.phone-section,
+.others-section {
+  text-align: center;
   font-size: 1.5rem;
+}
+.others-section{
+    margin-bottom: 5rem;
 }
