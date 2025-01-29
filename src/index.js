@@ -1,1 +1,3 @@
-console.log("it's working")
+console.log("%c it's working", 'color: lightgreen')
+
+import './style.css'
