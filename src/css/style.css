@@ -1,0 +1,48 @@
+/*__My code__*/
+:root {
+  --primary-color: hsl(13, 100%, 33%);
+  --secondary-color: #fff3d1;
+  --accent-color: hsl(25, 62%, 61%);
+  --btn-border-radius: 5px;
+
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-medium: 0px 1px 0.8px hsl(var(--shadow-color) / 0.72),
+    0px 1.7px 1.3px -1.7px hsl(var(--shadow-color) / 0.54),
+    -0.1px 6.6px 5px -3.3px hsl(var(--shadow-color) / 0.36),
+    -0.3px 20px 15px -5px hsl(var(--shadow-color) / 0.18);
+}
+body {
+  /* background-color: var(--primary-color); */
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  /* width: 100vw; */
+  background-color: var(--primary-color);
+  height: 130px;
+  border: 2px;
+  box-shadow: var(--shadow-elevation-medium);
+}
+button {
+  border-radius: var(--btn-border-radius);
+}
+button:hover {
+  cursor: pointer;
+}
+.nav-btn {
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 30px;
+
+  border: 2px solid var(--secondary-color);
+}
+.nav-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.logo-container {
+}
