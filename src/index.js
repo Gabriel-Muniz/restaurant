@@ -1,8 +1,30 @@
-console.log("%c it's working", 'color: lightgreen')
-
-import './css/reset.css'
-import './css/style.css'
-import './css/home.css'
-import initialLoad from './scripts/initialLoad.js'
+import "./css/reset.css";
+import "./css/style.css";
+import initialLoad from "./scripts/home.js";
+import { menuLoad } from "./scripts/menu.js";
 
 initialLoad();
+
+const content = document.querySelector('#content');
+
+const tabHandler = (() => {
+  const navButtons = document.querySelectorAll(".nav-btn");
+  console.log(navButtons);
+
+  navButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if(button.id == 'menu'){
+        content.innerHTML = "";
+        menuLoad();
+      }
+      if (button.id == 'home') {
+        content.innerHTML = "";
+        initialLoad();
+      }
+      if (button.id == "about"){
+        content.innerHTML = `<h1> About </h1>`;
+      }
+      
+    });
+  });
+})();

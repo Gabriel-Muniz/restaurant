@@ -1,3 +1,5 @@
+import "../css/home.css";
+
 const content = document.getElementById("content");
 
 const pageTitle = document.createElement("h1");
