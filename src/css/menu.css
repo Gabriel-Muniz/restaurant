@@ -5,6 +5,8 @@
   border: 5px solid var(--primary-color);
   border-radius: 8px;
   grid-column: 1;
+  background-position: center;
+  background-size: cover;
 }
 .div-row {
   display: grid;
