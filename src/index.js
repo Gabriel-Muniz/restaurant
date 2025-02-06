@@ -2,6 +2,7 @@ import "./css/reset.css";
 import "./css/style.css";
 import initialLoad from "./scripts/home.js";
 import { menuLoad } from "./scripts/menu.js";
+import populateMenu from "./scripts/about.js";
 
 initialLoad();
 
@@ -22,7 +23,8 @@ const tabHandler = (() => {
         initialLoad();
       }
       if (button.id == "about"){
-        content.innerHTML = `<h1> About </h1>`;
+        content.innerHTML = ``;
+        populateMenu()
       }
       
     });

@@ -65,7 +65,7 @@ p {
   margin-bottom: 2em;
   min-width: 50ch;
   max-width: 75ch;
-  text-align: justify;
+  /* text-align: start; */
 }
 h1 {
   margin: 30px 0;
